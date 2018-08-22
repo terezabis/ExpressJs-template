@@ -1,0 +1,24 @@
+<h1>Cars</h1>
+<div class="cars-container">
+    <div class="car-container">
+        {{#each cars}}
+        <section>
+
+            <a href="/cars/edit/{{id}}">
+                <img src="{{imageUrl}}" alt='car-image' />
+            </a>
+        </section>
+        <section class="info">
+
+            <strong>{{make}}</strong>
+            <span class="rented">rented:
+                <strong>1</strong>
+            </span>
+
+        </section>
+        {{else}}
+        </br>
+        <h2>No Cars</h2>
+        {{/each}}
+    </div>
+</div>
